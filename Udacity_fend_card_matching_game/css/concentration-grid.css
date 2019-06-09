@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.game-stats-wrapper {
+  max-width: 25em;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.grid-container {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.grid {
+  padding: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 6px;
+  background: rgb(2, 0, 36);
+  background-image: linear-gradient(
+    to right top,
+    #053735,
+    #00635c,
+    #009283,
+    #00c4aa,
+    #0df8cf
+  );
+}
+
+.grid .grid-row {
+  display: flex;
+}
+
+.grid .card {
+  height: 5em;
+  width: 5em;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  margin: 10px;
+  display: inline-flex;
+  font-size: 18px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #053735;
+  transform: rotateY(180deg);
+  transition: transform 0.2s;
+}
+
+.grid .card.flip {
+  transform: rotateY(0);
+}
+
+.grid .card.match {
+  background: #0a625e;
+}
+
+.grid .card.nomatch {
+  background: #620a0e;
+}
+
+.disable-click {
+  pointer-events: none;
+}
+
+#winMessage {
+  display: none;
+  color: #08238a;
+  font-size: 24px;
+  text-align: center;
+}
+
+#reset-btn {
+  background: #08238a;
+  color: #fff;
+  border: 1px solid #08238a;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.checked {
+  color: orange;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>concentration game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/concentration-grid.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <section class="game-stats-wrapper">
+          <button id="reset-btn">Reset</button>
+          <p id="timer">00:00:00</p>
+          <div>
+            <span class="fa fa-star checked rating"></span>
+            <span class="fa fa-star checked rating"></span>
+            <span class="fa fa-star checked rating"></span>
+          </div>
+        </section>
+        <section class="grid-container">
+          <div class="grid"></div>
+        </section>
+        <p id="winMessage">Congratulations! You Won.</p>
+      </main>
+    </div>
+
+    <script src="js/concentration.js"></script>
+  </body>
+</html>
